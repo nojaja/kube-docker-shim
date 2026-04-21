@@ -1,0 +1,18 @@
+{
+  "name": "kube-docker-shim01",
+  "version": "0.1.0",
+  "description": "Docker CLI shim for Kubernetes/OpenShift focused on DevContainer MVP",
+  "type": "module",
+  "bin": {
+    "kube-docker": "src/cli.js",
+    "kube-docker-docker": "src/docker-shim-entry.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
